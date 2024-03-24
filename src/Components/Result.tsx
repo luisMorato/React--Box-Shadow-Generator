@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaCopy } from "react-icons/fa";
 import { hexToRgb } from "../utils/Functions";
+import { toast } from "react-toastify";
 
 type Data = {
   data: { 
@@ -35,6 +36,7 @@ const Result = ({ data }: Data) => {
       ${div.childNodes[3].textContent}
       `);
     }
+    toast.success('Coppied To Clipboard!');
   }
 
   return result && (
