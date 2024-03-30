@@ -53,13 +53,13 @@ const Result = ({ data }: Data) => {
             <FaCopy size={18} className="hover:text-violet-600 transition duration-200" />
           </button>
           <p className="text-sm lg:text-base">
-            box-shadow: {result.data.horizontal}px {result.data.vertical}px {result.data.blur}px {result.data.spread}px {hexToRgb(result.data.color, result.data.opacity)};
+            box-shadow: {result.data.horizontal}px {result.data.vertical}px {result.data.blur}px {result.data.spread}px {hexToRgb(result.data.color, result.data.opacity)} {result.data.inset && "inset"};
           </p>
           <p className="text-sm lg:text-base">
-            -webkit-box-shadow: {result.data.horizontal}px {result.data.vertical}px {result.data.blur}px {result.data.spread}px {hexToRgb(result.data.color, result.data.opacity)};
+            -webkit-box-shadow: {result.data.horizontal}px {result.data.vertical}px {result.data.blur}px {result.data.spread}px {hexToRgb(result.data.color, result.data.opacity)} {result.data.inset && "inset"};
           </p>
           <p className="text-sm lg:text-base">
-            -moz-box-shadow: {result.data.horizontal}px {result.data.vertical}px {result.data.blur}px {result.data.spread}px {hexToRgb(result.data.color, result.data.opacity)};
+            -moz-box-shadow: {result.data.horizontal}px {result.data.vertical}px {result.data.blur}px {result.data.spread}px {hexToRgb(result.data.color, result.data.opacity)} {result.data.inset && "inset"};
           </p>
       </div>
       <p className="text-sm text-neutral-400 text-center">Click on the Icon to Copy</p>
